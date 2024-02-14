@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Laneway",
+            "brand_name": "NuCore",
+            "price": "245",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_laneway_sydney_spotted_gum_lr_2.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 1,
+            "description": "Transform any space in style with the Laneway Vinyl Planks range, the cost-effective and appealing alternative to a timber or carpet installation."
+        },
+        {
+            "id": "2",
+            "name": "Pavilion",
+            "brand_name": "Karndean",
+            "price": "365",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/f/l/flooring_vinyl_pavilion_bluemountainsblackbutt_lr_3.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 1,
+            "description": "Pavilion is a classic collection, this vinyl plank flooring is a practical and durable flooring solution for any space."
+        },
+        {
+            "id": "3",
+            "name": "Southern Lights",
+            "brand_name": "COREtec",
+            "price": "325",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_southernlights_recycleddriftwood-lr_1.jpg?quality=80&fit=bounds&height=300&width=240",
+            "is_vailable": 1,
+            "description": "Switch from carpet for a home or commercial install with Southern Lights Vinyl Planks in a huge range of quality timber style finishes."
+        },
+        {
+            "id": "4",
+            "name": "Stratus",
+            "brand_name": "COREtec",
+            "price": "180",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_stratus_spottedgum-555__3.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 0,
+            "description": "Stratus is the perfect flooring solution for your busy home. This strong vinyl plan offers longevity and style."
+        },
+        {
+            "id": "5",
+            "name": "Visions",
+            "brand_name": "Mannington",
+            "price": "150",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_visions_bondi_lr.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 1,
+            "description": "The modern-look alternative to carpet or commercial quality timber, Visions vinyl planks are a budget-friendly upgrade for homes and businesses."
+        },
+        {
+            "id": "6",
+            "name": "Harmony grange",
+            "brand_name": "Mannington",
+            "price": "459",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl-harmonygrange-cinque-terre_1_2.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 1,
+            "description": "A savvy alternative engineered floating timber floors, Harmony Grange vinyl flooring has the appeal of wood for a fraction of the price."
+        }
+    ]
+}
