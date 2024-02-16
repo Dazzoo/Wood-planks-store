@@ -1,14 +1,13 @@
+import React from "react";
 import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
 import ProductsList from '@/components/widgets/ProductsList'
+import { getProducts } from '@/service/routes/products'
 
-export default function Main() {
+export default async function Main() {
+  const products = await getProducts()
   
   return (
-    <div className='min-h-screen grid grid-rows-[auto,1fr,auto] font-serif ' >
-      <Header/>
-      <ProductsList/>
-      <Footer/>
-    </div>
+      <ProductsList products={products} />
   );
 }

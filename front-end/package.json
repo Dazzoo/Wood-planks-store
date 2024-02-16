@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "npx json-server --watch fake-api/db/db.json -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
+    "axios": "^1.6.7",
     "framer-motion": "^11.0.5",
     "next": "14.1.0",
     "react": "^18",
