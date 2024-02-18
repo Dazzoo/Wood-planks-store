@@ -59,6 +59,26 @@
             "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl-harmonygrange-cinque-terre_1_2.jpg?quality=80&fit=bounds&height=360&width=360",
             "is_vailable": 1,
             "description": "A savvy alternative engineered floating timber floors, Harmony Grange vinyl flooring has the appeal of wood for a fraction of the price."
+        },
+        {
+            "id": "7",
+            "name": "Stratus Premium",
+            "brand_name": "COREtec",
+            "price": "290",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_stratus_spottedgum-555__3.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 0,
+            "description": "Stratus is the perfect flooring solution for your busy home. This strong vinyl plan offers longevity and style."
+        },
+        {
+            "id": "8",
+            "name": "Laneway Premium",
+            "brand_name": "NuCore",
+            "price": "360",
+            "currency_symbols": "$",
+            "img_url": "https://www.carpetcourt.com.au/media/catalog/product/v/i/vinyl_laneway_sydney_spotted_gum_lr_2.jpg?quality=80&fit=bounds&height=360&width=360",
+            "is_vailable": 0,
+            "description": "Transform any space in style with the Laneway Vinyl Planks range, the cost-effective and appealing alternative to a timber or carpet installation."
         }
     ]
 }

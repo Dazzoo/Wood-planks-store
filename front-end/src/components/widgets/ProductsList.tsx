@@ -26,14 +26,14 @@ const ProductsList: React.FC<Props> = ({ products }) => {
                 The innovation leader in luxury vinyl plank
               </h2>
                 <h3 className="text-5xl" >
-                Let's Get Started
+                Let&apos;s Get Started
               </h3>
             </div>
-            <div className="w-[75%] flex flex-wrap justify-center content-center items-center py-20 px-20 bb" >
+            <div className="flex flex-wrap justify-center content-center items-center py-20 w-4/5	" >
             {products && products.length > 0 ? 
                 products.map(product => {
                   return (
-                    <div className="m-4" >
+                    <div className="m-4" key={product.id} >
                       <ProductCard
                         product={product}
                       />

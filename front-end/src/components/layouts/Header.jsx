@@ -18,15 +18,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex min-w-full" >
-      <Navbar disableAnimation isBordered className=" py-6 px-12 max-md:px-4 text-2xl bg-stone-200">
+    <header className="flex w-full" >
+      <Navbar isBordered className=" py-6 px-12 max-md:px-4 text-2xl bg-stone-200">
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle />
         </NavbarContent>
 
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <p className="text-2xl">Bits Orchestra</p>
+            <h1 className="text-2xl font-bold ">Bits Orchestra</h1>
           </NavbarBrand>
         </NavbarContent>
 

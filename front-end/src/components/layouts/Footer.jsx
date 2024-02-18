@@ -7,7 +7,7 @@ export default function Footer() {
     return (
       <footer className='flex justify-between py-4 px-12 text-2xl bg-stone-200 border-black border-b-1'>
       <div className='text-lg hidden sm:flex'>
-        <Image height={35} width={68} src='/img/logo.png' />
+        <Image height={35} width={68} alt="logo" src='/img/logo.png' />
       </div>
       <div className='content-between text-lg'>
         <ul className='flex mb-[1rem]'>

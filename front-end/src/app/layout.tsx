@@ -21,10 +21,11 @@ export default function RootLayout({
       <body className={`
         ${inter.className}
         min-h-screen grid grid-rows-[auto,1fr,auto] font-serif
-        `}>
-          <Header/>
-            {children}
-          <Footer/>
+        `}
+        >
+            <Header/>
+              {children}
+            <Footer/>
         </body>
     </html>
   );

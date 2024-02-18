@@ -1,10 +1,12 @@
 import React from "react";
+import ReviewsPage from "@/components/widgets/ReviewsPage"
+import useMockData from '@/../../mock-tool/someMockFile'
 
 
-export default function page() {
+export default function Page() {
+  const { reviews } = useMockData()
+
     return (
-      <div className=" " >
-        Reviews
-      </div>
+      <ReviewsPage reviews={reviews} />
     );
   }
