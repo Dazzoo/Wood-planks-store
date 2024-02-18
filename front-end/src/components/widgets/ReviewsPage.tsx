@@ -32,9 +32,8 @@ const ReviewsPage: React.FC<ReviewsList> = ({ reviews }) => {
     return (
         <div className=" bg-gray-200 flex flex-wrap justify-center min-h-screen" >
             <div className="md:mx-20 max-w-[60rem]  p-12 " >
-                <div className="py-4 h-[50rem] max-h-[50rem] overflow-auto	scroll-smooth" >
                     {reviewsList.length > 0 ? (
-                    <>
+                    <div className="py-4 h-[50rem] max-h-[50rem] overflow-y-auto	scroll-smooth" >
                         {reviewsList.slice(0, displayCount).map((review) => (
                             <div className="my-10" key={review.id}>
                                 <ReviewItem review={review} />
@@ -48,13 +47,12 @@ const ReviewsPage: React.FC<ReviewsList> = ({ reviews }) => {
                                 READ MORE REVIEWS
                             </button>
                         )}
-                    </>
+                    </div>
                     ) : (
-                    <div className="min-h-screen flex justify-center content-center items-center" >
+                    <div className="py-4 h-[50rem] w-[60rem] max-h-[50rem] flex justify-center content-center items-center" >
                         Loading...
                     </div>
                     )}
-                </div>
                 <div className="" >
                     <ReviewsForm
                         addReview={(review: Review) => {
