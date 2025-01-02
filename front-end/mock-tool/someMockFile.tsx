@@ -10,7 +10,7 @@ export default function useMockData() {
     },
     {
       id: 2,
-      name: 'Natan Doe',
+      name: 'Nathan Doe',
       rating: 5,
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque. Sed euismod, diam sit amet elementum euismod.',
       date: '2021-08-21'

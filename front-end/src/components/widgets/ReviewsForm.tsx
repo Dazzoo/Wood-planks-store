@@ -1,9 +1,9 @@
 'use client'
-import React from "react";
+import ButtonBasic from '@/components/shared/buttons/BasicButton';
 import { Formik } from 'formik';
+import React from "react";
 import ReactStars from "react-rating-stars-component";
-import ButtonBasic from '@/components/shared/buttons/BasicButton'
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 
 type FormValues = {
@@ -28,32 +28,6 @@ type FormErrors = {
   
 
 const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
-
-    const handleValidate = (values: FormValues) => {
-        const errors: Partial<FormValues> = {};
-        
-        if (!values.email) {
-        errors.email = `Email field can't be empty equired`;
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-        errors.email = 'Invalid email address';
-        }
-
-        if (!values.name) {
-            errors.name = `Name field can't be empty equired`;
-        }
-
-        if (!values.comment) {
-            errors.comment = `Comment field can't be empty equired`;
-        }
-      
-        // if (values.phone && !/^[0-9+]{10}$/i.test(values.phone)) {
-        //     errors.phone = 'Invalid phone number';
-        // }
-
-        console.log(errors)
-
-        return errors;
-    }
 
     const handleSubmit = (values: FormValues, { resetForm }: any) => {
         const id = Number(uuidv4())
@@ -94,7 +68,6 @@ const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
                     date: '',
                     id: Number(uuidv4())
                 }}
-                validate={handleValidate}
                 onSubmit={handleSubmit}
                 >
                 {({
@@ -116,6 +89,7 @@ const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
                                 className="w-full p-2 h-32"
                                 name="comment"
                                 placeholder="Comment *"
+                                required={true}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 value={values.comment}
@@ -134,6 +108,7 @@ const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
                                     type="text"
                                     name="name"
                                     placeholder="Name *"
+                                    required={true}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.name}
@@ -150,6 +125,7 @@ const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
                                     type="email"
                                     name="email"
                                     placeholder="Email *"
+                                    required={true}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.email}
