@@ -6,7 +6,6 @@
     "dev": "next dev",
     "server": "npx json-server --watch fake-api/db/db.json -p 4000",
     "build": "next build && xcopy /E /I .next ..\\back-end\\wwwroot\\",
-    "postinstall": "npm run server",
     "start": "next start",
     "lint": "next lint"
   },
