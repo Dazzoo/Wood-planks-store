@@ -1,7 +1,7 @@
 'use client'
-import React, {  useState, useEffect } from "react";
-import ReviewItem from "@/components/widgets/ReviewItem"
-import ReviewsForm from "@/components/widgets/ReviewsForm"
+import ReviewItem from "@/components/widgets/ReviewItem";
+import ReviewsForm from "@/components/widgets/ReviewsForm";
+import React, { useEffect, useRef, useState } from "react";
 
 interface Review {
     id: number;
@@ -19,10 +19,19 @@ interface Review {
 const ReviewsPage: React.FC<ReviewsList> = ({ reviews }) => {
     const [reviewsList, setReviewsList] = useState<Review[]>([])
     const [displayCount, setDisplayCount] = useState<number>(5)
+
+    const reviewsContainerRef = useRef<HTMLDivElement>(null);
+
     
     useEffect(() => {
         if (reviews) setReviewsList(reviews);
       }, [reviews]);
+
+    useEffect(() => {
+        if (reviewsContainerRef.current) {
+            reviewsContainerRef.current.scrollTop = reviewsContainerRef.current.scrollHeight;
+        }
+    }, [reviewsList]);
 
 
     const loadMoreReviews = () => {
@@ -33,7 +42,9 @@ const ReviewsPage: React.FC<ReviewsList> = ({ reviews }) => {
         <div className=" bg-gray-200 flex flex-wrap justify-center min-h-screen" >
             <div className="md:mx-20 max-w-[60rem]  p-12 " >
                     {reviewsList.length > 0 ? (
-                    <div className="py-4 h-[50rem] max-h-[50rem] overflow-y-auto	scroll-smooth" >
+                    <div                         
+                        ref={reviewsContainerRef}
+                        className="py-4 h-[50rem] max-h-[50rem] overflow-y-auto	scroll-smooth" >
                         {reviewsList.slice(0, displayCount).map((review) => (
                             <div className="my-10" key={review.id}>
                                 <ReviewItem review={review} />
