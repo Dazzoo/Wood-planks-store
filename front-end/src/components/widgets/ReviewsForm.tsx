@@ -29,6 +29,7 @@ type FormErrors = {
 
 const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
 
+
     const handleSubmit = (values: FormValues, { resetForm }: any) => {
         const id = Number(uuidv4())
 
@@ -152,8 +153,10 @@ const ReviewsForm: React.FC<ReviewsFormProps> = ({ addReview }) => {
                     </div>
                     <div>
                     <ReactStars
+                        key={values.rating}
                         count={5}
                         edit={true}
+                        value={values.rating}
                         onChange={(new_rating: number) => {
                             setFieldValue('rating', new_rating);
                        }}
