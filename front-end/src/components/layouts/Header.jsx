@@ -1,7 +1,5 @@
-import React from "react";
-import Image from 'next/image'
-import {Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarItem, Link, Button} from "@nextui-org/react";
-import BasicButton from '@/components/shared/buttons/BasicButton'
+import BasicButton from '@/components/shared/buttons/BasicButton';
+import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 
 
 export default function Header() {
@@ -26,13 +24,13 @@ export default function Header() {
 
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <h1 className="text-2xl font-bold ">Bits Orchestra</h1>
+            <h1 className="text-2xl font-bold ">Planks Store</h1>
           </NavbarBrand>
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarBrand>
-            <p className="text-2xl">Bits Orchestra</p>
+            <p className="text-2xl">Planks Store</p>
           </NavbarBrand>
           {menuItems.map((item, index) => (
             <NavbarItem 
