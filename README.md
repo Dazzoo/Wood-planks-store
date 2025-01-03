@@ -1,7 +1,7 @@
 
 ## App is live on
 
-[https://shop.shushanskyi.com](https://shop.shushanskyi.com)
+[https://wood-planks-store.vercel.app](https://wood-planks-store.vercel.app)
 
 ## Run this project locally
 
