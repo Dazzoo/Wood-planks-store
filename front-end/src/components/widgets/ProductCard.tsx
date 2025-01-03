@@ -1,6 +1,9 @@
-import React from "react";
+'use client'
+import CheckboxBasic from '@/components/shared/input/CheckBoxBasic';
+import clsx from 'clsx';
+import { Heart } from 'lucide-react';
 import Image from 'next/image';
-import CheckboxBasic from '@/components/shared/input/CheckBoxBasic'
+import React from "react";
 
 interface Product {
     id: string;
@@ -19,6 +22,13 @@ interface Product {
   
 
 const ProductCard: React.FC<Props> = ({ product }) => {
+    const [likedProducts, setLikedProducts] = React.useState<string[]>([]);
+
+    const handleLikeClick = () => {
+      setLikedProducts(prev => 
+        prev.includes(product.id) ? prev.filter(id => id !== product.id) : [...prev, product.id]
+      );
+    };
 
     return (
       <div className=" flex-col p-4 border-2	border-stone-300	hover:border-stone-700	group">
@@ -37,13 +47,11 @@ const ProductCard: React.FC<Props> = ({ product }) => {
             Product Details
             </div>
           </div>
-          <div className="absolute top-0 hover:top-[-1px] right-0 p-2	text-xl	text-zinc-50 opacity-0 group-hover:opacity-100 cursor-pointer" >
-          <Image
-            src={"/img/heart.png"}
-            alt={product.name} 
-            width={30} 
-            height={30}
-          />
+          <div className={clsx({
+            "opacity-100": likedProducts.includes(product.id),
+            "opacity-0": !likedProducts.includes(product.id)
+          }, "absolute top-0 hover:top-[-1px] right-0 p-2	text-xl	text-zinc-50 group-hover:opacity-100 cursor-pointer")} >
+          <Heart stroke={likedProducts.includes(product.id) ? "#FF0000" : "#FFFFFF"} fill={likedProducts.includes(product.id) ? "#FF0000" : "#FFFFFF"} onClick={handleLikeClick} className='hover:scale-110' size={24} />
           </div>
         </div>
         <div className="flex pt-2" >
